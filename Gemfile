@@ -76,6 +76,9 @@ gem 'carrierwave', '~> 3.0'
 # 脆弱性があるため手動でアップデート
 gem 'rexml', '~> 3.3.6'
 
+# Pumaの脆弱性のアップデートを行ったところ互換性がないということで手動でインストール
+gem 'rack', '~> 3.1', '>= 3.1.8'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
